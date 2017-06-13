@@ -18,7 +18,7 @@ script:
   - xvfb-run npm test
   - xvfb-run npm run test:integration
 before_script:
-  - npm install -g bower
+  - npm install
   - bower install
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
