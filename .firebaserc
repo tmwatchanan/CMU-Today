@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "cmu-today",
+    "production": "cmu-today"
+  }
+}
