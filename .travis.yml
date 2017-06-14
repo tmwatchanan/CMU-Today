@@ -21,7 +21,10 @@ script:
 before_script:
   - npm install -g bower
   - npm install -g polymer-cli
+  - npm install firebase-tools
   - bower install
+  - npm install
+  - polymer install
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
 notifications:
