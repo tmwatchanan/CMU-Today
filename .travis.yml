@@ -18,8 +18,8 @@ script:
   - xvfb-run npm test
   - xvfb-run npm run test:integration
 before_script:
+  - nom install -g bower
   - npm install -g polymer-cli
-  - bower install
 after_success:
   - firebase deploy --token "$FIREBASE_TOKEN"
 notifications:
